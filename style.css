@@ -15,10 +15,16 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/*body {
   font-family: 'Segoe UI', sans-serif;
   color: var(--text-color);
   background-color: #fafafa;
+  line-height: 1.6;
+}*/
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--text-color);
+  background: linear-gradient(to bottom right, #f0f2f5, #bfc5cd);
   line-height: 1.6;
 }
 
@@ -29,8 +35,8 @@ body {
 }
 
 header {
-  background-color: var(--primary-color);
-  color: white;
+  background: linear-gradient(to bottom, #e0f0ff 0%, #a0c8f0 60%);
+  color: #000;
   padding: 2rem 0;
   text-align: center;
 }
@@ -56,19 +62,20 @@ header {
 
 
 nav {
-  background-color: #003f6b;
+  background-color: #a0c8f0;
   padding: 0.5rem 0;
 }
 
 .nav-links {
   display: flex;
   flex-wrap: wrap;
+  font-weight: bold;
   justify-content: center;
   gap: 1rem;
 }
 
 nav a {
-  color: white;
+  color: #000;
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: background 0.3s;
@@ -76,6 +83,7 @@ nav a {
 
 nav a:hover {
   background-color: #002a4d;
+  color: #fff;
   border-radius: 5px;
 }
 
@@ -146,9 +154,30 @@ h2 {
   border-radius: 5px;
 }
 
+/*.project {
+  margin-bottom: 1rem;
+}*/
 .project {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
   margin-bottom: 1rem;
 }
+
 
 form input,
 form textarea {
@@ -186,6 +215,79 @@ footer {
   padding: 1rem 0;
   margin-top: 2rem;
 }
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-links img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  transition: transfor 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer .social-links img {
+  filter: brightness(0) invert(1);
+}
+
+footer .social-links img:hover {
+  filter: brightness(0.9) invert(1);
+}
+
+/* Fade-in base class */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Keyframe animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay options (for staggering) */
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.4s;
+}
+.delay-3 {
+  animation-delay: 0.6s;
+}
+.delay-4 {
+  animation-delay: 0.8s;
+}
+
+
 
 /* Responsive Design */
 @media (max-width: 600px) {

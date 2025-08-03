@@ -30,21 +30,12 @@
   </nav>
 
   <main class="container">
-    <section id="about" class="card">
+    <section id="about" class="card fade-in delay-1">
       <h2>About Me</h2>
       <p>I am a passionate developer currently learning Android Jetpack Compose and Django. I enjoy solving real-world problems and creating user-centered digital experiences.</p>
     </section>
 
-    <!-- <section id="skills" class="card">
-      <h2>Programming Languages</h2>
-      <ul class="skills-list">
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>Kotlin</li>
-        <li>HTML & CSS</li>
-      </ul>
-    </section> -->
-    <section id="skills" class="card">
+    <section id="skills" class="card fade-in delay-2">
       <h2>Programming Languages</h2>
       <div class="skill-icons">
         <div class="skill">
@@ -71,30 +62,40 @@
     </section>
 
 
-    <section id="education" class="card">
+    <section id="education" class="card fade-in delay-3">
       <h2>Educational Background</h2>
       <p>Bachelor of Science in Software Engineering – Kisii Univerisity</p>
       <a href="files/Carson Ratemo CV.pdf" download class="btn">📄 Download My CV</a>
     </section>
 
-    <section id="interests" class="card">
+    <section id="interests" class="card fade-in delay-4">
       <h2>Professional Interests</h2>
       <p>My interests lie in mobile and web development, open source, and building cross-platform tools that solve real-life challenges using modern technologies like React and Kotlin Multiplatform.</p>
     </section>
 
-    <section id="projects" class="card">
+    <section id="projects" class="card fade-in delay-1">
       <h2>Projects</h2>
       <div class="project">
+        <img src="https://placehold.co/600x300/000fff/ffffff?text=Task+Manager">
         <h3>Task Manager App</h3>
         <p>A simple to-do app built using Jetpack Compose.</p>
+        <a href="#">View Project</a>
       </div>
       <div class="project">
+        <img src="https://placehold.co/600x300/5b9bd5/ffffff?text=Django+Blog">
         <h3>Personal Blog</h3>
         <p>A Django-based blog where I share programming tutorials and ideas.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project">
+        <img src="https://placehold.co/600x300/5b7bd5/ffffff?text=Portfolio+Website" alt="Portfolio-Website">
+        <h3>Portfolio-Website</h3>
+        <p>A HTML/CSS based portifolio website that introduces me and lists my programming skills and projects.</p>
+        <a href="#">View Project</a>
       </div>
     </section>
 
-    <section id="contact" class="card">
+    <section id="contact" class="card fade-in delay-2">
       <h2>Contact Me</h2>
       <form>
         <input type="text" name="name" placeholder="Your Name" required />
@@ -102,12 +103,34 @@
         <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
         <button type="submit" class="btn">Send</button>
       </form>
+
+      <div class="social-links">
+        <a href="https://github.com/omwengaswift" target="_blank">
+          <img src="https://cdn.simpleicons.org/github/000000" alt="GitHub" />
+        </a>
+        <a href="https://linkedin.com/in/omwengaswift" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/0077B5/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="mailto:omwengaswift@gmail.com">
+          <img src="https://cdn.simpleicons.org/gmail/D14836" alt="Email" />
+        </a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
+    <div class="container footer-content">
       <p>&copy; 2025 Omwenga Carson. All rights reserved.</p>
+
+      <div class="social-links">
+        <a href="https://github.com/omwengaswift" target="_blank">
+          <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" />
+        </a>
+        <a href="https://linkedin.com/in/omwengaswift" target="_blank">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" />
+        </a>
+
+      </div>
     </div>
   </footer>
 </body>

@@ -26,16 +26,21 @@ This is my responsive personal portfolio website built using **HTML** and **CSS*
 
 - HTML5
 - CSS3 (Vanilla)
-- SimpleIcons for skill icons
+- SimpleIcons and Icons8 for skill icons
+- Placehold.co for project images
 
 ## 📸 Preview
 
-![Screenshot](images/screenshot.jpg) <!-- Add a screenshot if you want -->
+![Screenshot](images/Screenshot.png)
+
+Other project images include preview images and links. Real screenshots can be added later.
+
+You can preview the website live at (https://omwengaswift.github.io/my_portfolio/)
 
 ## 🧑 Author
 
 **Omwenga Carson**  
-[GitHub](https://github.com/omwengaswift) • [LinkedIn](#) • [Email](omwengaswift@gmail.com)
+[GitHub](https://github.com/omwengaswift) • [LinkedIn](omwengacarson) • [Email](omwengaswift@gmail.com)
 
 ---
 
